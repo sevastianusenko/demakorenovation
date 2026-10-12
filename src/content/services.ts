@@ -520,7 +520,7 @@ export const services: Service[] = [
   {
     slug: "commercial",
     name: "Commercial",
-    title: "Commercial Contractor: Storefronts, Windows, Build-Outs",
+    title: "Commercial Renovation Contractor, Lancaster County & SE PA",
     description:
       "Commercial window replacement, storefront doors, retail build-outs and exterior repairs for offices and stores in Lancaster, Chester and Delaware County, PA.",
     h1: "Commercial windows, storefronts and build-outs",

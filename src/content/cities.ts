@@ -209,6 +209,43 @@ export const cities: City[] = [
     ],
   },
   {
+    slug: "malvern",
+    name: "Malvern",
+    county: "chester-county",
+    title: "Andersen Window Installation in Malvern, PA",
+    description:
+      "Andersen and Marvin window replacement in Malvern, PA: stone and frame houses, full-frame installs flashed into the wall and trimmed inside and out. Free estimates.",
+    h1: "Andersen window installation in Malvern, PA",
+    lede: "Window replacement for Malvern's stone farmhouses, older borough houses and 1980s to 2000s colonials. Andersen and Marvin windows, set into the wall properly and trimmed inside and out by the same crew.",
+    hero: "img-6729",
+    photos: ["img-6729", "img-7223", "img-6715"],
+    drive: "About an hour",
+    around: ["Malvern borough", "East Whiteland", "Willistown", "Charlestown", "Frazer", "Paoli", "Berwyn", "Devon", "Exton", "Chester Springs"],
+    intro: [
+      "Malvern sits on the edge of the Main Line, between Paoli and Exton. Most of our recent window work is a short drive east of here, in Lower Merion and Radnor, where we have set Andersen windows into fieldstone walls and trimmed out Marvin windows in a full renovation. Malvern houses ask for the same skills.",
+      "The housing here is mixed. The borough has older frame and stone houses. The townships around it, East Whiteland, Willistown and Charlestown, have stone farmhouses and a lot of 1980s to 2000s colonials whose original builder windows are now failing. Each needs a different approach: careful full-frame work in thick stone walls, or a clean insert or full-frame replacement in a frame colonial.",
+      "We do not have a project page in Malvern itself yet. The jobs on this page are our nearest Andersen and Marvin window work, each labelled with where it was, so you can see exactly how we set and trim a window.",
+    ],
+    focus: [
+      { service: "windows", t: "Andersen window replacement", d: "Andersen 100, 200, 400 and E-Series windows, chosen for the house and the budget. Full-frame where the old frame or sill is rotted, insert where it is sound." },
+      { service: "windows", t: "Windows in stone walls", d: "Thick fieldstone openings are never square. Each window is measured on its own, shimmed to the opening, flashed and sealed to the stone, with wide jamb extensions inside." },
+      { service: "doors", t: "Entry and French doors", d: "Entry doors with sidelights and French doors with transoms, set plumb on a flashed sill. On the Lower Merion stone house we installed both in fieldstone walls." },
+      { service: "finish-carpentry", t: "Interior casing and stools", d: "New casing, stools and aprons that match the house, so new windows look like they were always there." },
+    ],
+    houses: [
+      { t: "Stone farmhouses", d: "Deep walls and irregular openings. Windows are fitted to the stone, never forced square, and the joint to the masonry is sealed so it can move." },
+      { t: "1980s to 2000s colonials", d: "Original builder windows with failed seals and rotted sills, often with rot in the brickmold or trim behind the gutters. A window and exterior trim package is common." },
+      { t: "Older borough houses", d: "Frame houses with wood windows and trim. Some windows are worth restoring, others are due for replacement in wood or clad wood that keeps the look." },
+    ],
+    projects: ["andersen-windows-french-doors-lower-merion", "interior-trim-built-ins-lower-merion", "sunroom-windows-door-chadds-ford", "rotted-window-sill-repair-lower-merion", "office-building-window-replacement-newtown-square"],
+    faqs: [
+      { q: "Do you install Andersen windows in Malvern?", a: "Yes. We install Andersen and Marvin windows in Malvern and the townships around it. Our nearest finished Andersen job is a stone house in Lower Merion, shown on this page." },
+      { q: "Which Andersen series is right for my house?", a: "It depends on the house and the budget. The 100 Series is a durable composite at a lower price, the 400 Series is the classic wood window with a low-maintenance exterior, and the E-Series suits custom sizes and older houses. Our Andersen series guide explains the differences." },
+      { q: "Can you replace windows in a stone house?", a: "Yes. Most of our recent window work is in stone houses. Each opening is measured separately, the window is set and flashed, and the joint to the stone is sealed with a flexible sealant." },
+      { q: "Is the estimate free in Malvern?", a: "Yes. We come out, measure every window, check the frames and sills and send a written estimate with each window on its own line." },
+    ],
+  },
+  {
     slug: "west-chester",
     name: "West Chester",
     county: "chester-county",
@@ -230,6 +267,7 @@ export const cities: City[] = [
       { service: "windows", t: "Window replacement", d: "Replacement and full-frame windows in colonials and older borough houses, flashed in and trimmed inside and out, like the sunroom wall in Chadds Ford." },
       { service: "porches-decks", t: "Decks and porches", d: "Composite and pressure-treated decks with stairs and railings, covered porches and composite steps and landings." },
       { service: "finish-carpentry", t: "Trim and wainscoting", d: "Crown, wainscoting, stair trim and casing, like the stairwell wainscoting in Thornbury." },
+      { service: "doors", t: "Exterior doors", d: "Entry doors, French doors and storm doors for borough houses and colonials, set plumb on a flashed sill with new trim. Historic district doors are checked with the borough first." },
       { service: "commercial", t: "Store and office fit-outs", d: "Counters, shelving, doors and windows for small commercial spaces, like the retail store we built out in town." },
     ],
     houses: [

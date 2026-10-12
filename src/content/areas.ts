@@ -149,9 +149,9 @@ export const areas: Area[] = [
   {
     slug: "chester-county",
     name: "Chester County",
-    title: "Contractor in Chester County: Malvern, Chadds Ford, Exton",
+    title: "Contractor in Chester County: Chadds Ford, Exton, Downingtown",
     description:
-      "Windows, doors, siding, trim and finish carpentry across Chester County, PA: Chadds Ford, Thornbury, Malvern, Downingtown, Exton and Kennett Square.",
+      "Windows, doors, siding, trim and finish carpentry across Chester County, PA: Chadds Ford, Thornbury, Downingtown, Exton and Kennett Square.",
     h1: "Carpentry and renovation in Chester County",
     lede: "In Chester County we have built stairwell wainscoting in Thornbury Township, framed a sunroom wall with new windows and a door in Chadds Ford and built out a retail store in West Chester.",
     hero: "img-4582",

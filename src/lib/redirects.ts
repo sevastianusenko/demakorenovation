@@ -13,7 +13,7 @@ const svc: Record<string, string> = {
 
 const lancasterTowns = ["ephrata", "lititz", "new-holland", "manheim", "akron", "denver", "mount-joy", "adamstown", "reamstown", "reinholds", "stevens", "terre-hill", "east-earl", "blue-ball", "brownstown", "bowmansville", "churchtown", "goodville", "elizabethtown", "leola", "strasburg"];
 const berksTowns = ["morgantown"];
-const chesterTowns = ["west-chester", "malvern", "downingtown", "kennett-square", "honey-brook"];
+const chesterTowns = ["downingtown", "kennett-square", "honey-brook"];
 
 const g = (slug: string) => `/blog/${slug}/`;
 const p = (slug: string) => `/projects/${slug}/`;
@@ -82,7 +82,7 @@ const posts: Record<string, string> = {
 const oldProjects: Record<string, string> = {
   "full-window-replacement-ephrata-pa": "/windows/",
   "custom-entry-door-stone-facade-west-chester-pa": p("andersen-windows-french-doors-lower-merion"),
-  "andersen-windows-stone-home-malvern-pa": p("andersen-windows-french-doors-lower-merion"),
+  "andersen-windows-stone-home-malvern-pa": "/service-area/chester-county/malvern/",
   "board-and-batten-feature-wall-ephrata-pa": "/finish-carpentry/",
   "staircase-wainscoting-railing-new-holland-pa": p("stairwell-wainscoting-thornbury"),
   "custom-built-in-bookcases-lititz-pa": "/built-ins/",
@@ -109,8 +109,8 @@ const oldProjects: Record<string, string> = {
   "composite-deck-stairs-lititz-pa-lancaster-county": p("composite-steps-landing-media"),
   "re-siding-stone-home-kennett-square-pa": p("lap-siding-cedar-shake-gambrel-lower-merion"),
   "fiber-cement-siding-denver-pa-lancaster-county": "/siding/",
-  "andersen-window-installation-malvern-pa": p("andersen-windows-french-doors-lower-merion"),
-  "custom-door-installation-west-chester-pa": "/doors/",
+  "andersen-window-installation-malvern-pa": "/service-area/chester-county/malvern/",
+  "custom-door-installation-west-chester-pa": "/service-area/chester-county/west-chester/",
 };
 
 export const redirectMap: [string, string][] = [
@@ -123,6 +123,8 @@ export const redirectMap: [string, string][] = [
   ]),
   ...lancasterTowns.map((t) => [`/service-area/${t}-pa/`, "/service-area/lancaster-county/"] as [string, string]),
   ...chesterTowns.map((t) => [`/service-area/${t}-pa/`, "/service-area/chester-county/"] as [string, string]),
+  ["/service-area/malvern-pa/", "/service-area/chester-county/malvern/"],
+  ["/service-area/west-chester-pa/", "/service-area/chester-county/west-chester/"],
   ...berksTowns.map((t) => [`/service-area/${t}-pa/`, "/service-area/berks-county/"] as [string, string]),
   ...Object.entries(posts).map(([old, to]) => [`/${old}/`, to] as [string, string]),
   ...Object.entries(oldProjects).map(([old, to]) => [`/project/${old}/`, to] as [string, string]),

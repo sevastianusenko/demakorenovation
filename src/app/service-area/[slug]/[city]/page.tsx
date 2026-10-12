@@ -138,11 +138,11 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             <p className="max-w-md text-[1.05rem] lg:justify-self-end">The jobs we are called for most here. Each one links to the full page about that work.</p>
           </div>
           <ul className="grid gap-4 md:grid-cols-2">
-            {c.focus.map((f) => {
+            {c.focus.map((f, i) => {
               const s = serviceBySlug(f.service)!;
               const p = photo(servicePhotos[f.service] ?? s.hero);
               return (
-                <li key={f.t}>
+                <li key={f.t} className={c.focus.length % 2 === 1 && i === c.focus.length - 1 ? "md:col-span-2" : ""}>
                   <Link href={`/${s.slug}/`} className="group grid h-full overflow-hidden rounded-card bg-white sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
                     <div className="relative aspect-[16/10] overflow-hidden bg-night sm:aspect-auto sm:min-h-[260px]">
                       <Image src={p.src} alt={p.alt} fill sizes="(min-width: 768px) 22vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.05]" />
