@@ -10,6 +10,7 @@ import { Faq } from "@/components/ui/Faq";
 import { HeroSlices, WorkBento, Steps, ReviewQuote, Estimate, AreaGrid } from "@/components/sections";
 import { ServiceIndex, type ServiceTile } from "@/components/home/ServiceIndex";
 import { HouseTimeline } from "@/components/home/HouseTimeline";
+import { LeadForm } from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: { absolute: `${site.name} | Exterior & Finish Carpentry Contractor, PA` },
@@ -68,13 +69,42 @@ export default function Home() {
               We are a small, careful carpentry crew out of Ephrata. Siding, windows, doors, trim, porches, dormers and built-ins, across Lancaster County and the six counties around it.
             </p>
             <div className="hero-rise-3 mt-9 flex flex-wrap gap-4">
-              <Button href="/contact/">Request a free estimate</Button>
+              <Button href="#quote">Get a quote from photos</Button>
               <Button href="/projects/" variant="outline-light">
                 See our projects
               </Button>
             </div>
           </div>
           <HeroSlices ids={["img-6460"]} />
+        </div>
+      </section>
+
+      {/* Photo quote: the form right under the hero */}
+      <section id="quote" className="scroll-mt-28 bg-cloud">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:py-24 lg:grid-cols-[1fr_1.25fr] lg:gap-16 lg:px-8">
+          <div>
+            <p className="eyebrow">Photo quote</p>
+            <h2 className="mt-3 text-[clamp(2rem,1.4rem+2.4vw,3.4rem)]">Send a few photos, get a ballpark price</h2>
+            <p className="mt-5 max-w-md text-[1.08rem]">No visit needed to find out if the job fits your budget. Snap the problem from your phone and we will reply with a rough range.</p>
+            <ol className="mt-9 space-y-5">
+              {[
+                ["Take 2 to 6 photos", "One wide shot of the wall, window or room, then close-ups of the rot, gaps or damage."],
+                ["Tell us the town", "Add a line about what you want done. Measurements help but are not required."],
+                ["Get a rough range", `${site.callbackPromise}. If the numbers work, we come out for a free visit and a written price.`],
+              ].map(([t, d], i) => (
+                <li key={t} className="grid grid-cols-[44px_1fr] gap-4">
+                  <span className="mono inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/25 text-[0.85rem] text-ink">{`0${i + 1}`}</span>
+                  <div className="pt-1.5">
+                    <h3 className="text-[1.15rem]">{t}</h3>
+                    <p className="mt-1.5 max-w-md text-[0.97rem]">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="card-white p-6 shadow-[0_24px_60px_-30px_rgb(18_17_15/0.35)] sm:p-9">
+            <LeadForm source="home-quote" />
+          </div>
         </div>
       </section>
 
